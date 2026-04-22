@@ -1,0 +1,7 @@
+{
+    "bonus_rate": 0.1,
+    "deduction_rate": 0.05,
+    "data_file": "employee_data.csv",
+    "backup_folder": "backups",
+    "max_login_attempts": 3
+}

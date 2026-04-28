@@ -155,28 +155,28 @@ else:
 
     # 6. DASHBOARD
      elif choice == "Dashboard":
-    st.header("📊 Business Analytics")
+        st.header("📊 Business Analytics")
 
     # 1️⃣ Salary Distribution
-    st.subheader("Salary Distribution")
-    fig1, ax1 = plt.subplots()
-    ax1.hist(df["NetSalary"], bins=15)
-    st.pyplot(fig1)
+        st.subheader("Salary Distribution")
+        fig1, ax1 = plt.subplots()
+        ax1.hist(df["NetSalary"], bins=15)
+        st.pyplot(fig1)
 
     # 2️⃣ Avg Salary by Department
-    if "Department" in df.columns:
-        st.subheader("Avg Salary by Dept")
-        st.bar_chart(df.groupby("Department")["NetSalary"].mean())
+        if "Department" in df.columns:
+            st.subheader("Avg Salary by Dept")
+            st.bar_chart(df.groupby("Department")["NetSalary"].mean())
 
     # 3️⃣ Employees by Department
-    if "Department" in df.columns:
-        st.subheader("Employees by Department")
-        st.bar_chart(df["Department"].value_counts())
+        if "Department" in df.columns:
+            st.subheader("Employees by Department")
+            st.bar_chart(df["Department"].value_counts())
 
     # 4️⃣ Performance Rating Distribution
-    if "PerformanceRating" in df.columns:
-        st.subheader("Performance Rating Distribution")
-        st.bar_chart(df["PerformanceRating"].value_counts().sort_index())
+        if "PerformanceRating" in df.columns:
+            st.subheader("Performance Rating Distribution")
+            st.bar_chart(df["PerformanceRating"].value_counts().sort_index())
 
     # 7. SALARY PREDICTION
     elif choice == "Salary Prediction":

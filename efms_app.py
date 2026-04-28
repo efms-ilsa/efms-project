@@ -154,7 +154,7 @@ else:
                 st.warning(f"Employee {del_id} removed")
 
     # 6. DASHBOARD
-     elif choice == "Dashboard":
+    elif choice == "Dashboard":
         st.header("📊 Business Analytics")
 
     # 1️⃣ Salary Distribution
